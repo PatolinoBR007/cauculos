@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação do Segundo Grau</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Equação do Segundo Grau</h1>
+    </header>
+    <section id="section">
+        <p id="cab">Digite os valores de 
+            <input type="number" name="valor" class="NumBt" id="valorA" placeholder="X²"> +
+            <input type="number" name="valor" class="NumBt" id="valorB" placeholder="X"> +
+            <input type="number" name="valor" class="NumBt" id="valorC"
+            placeholder="1"> = <span onclick="easter()">0</span>
+        </p>
+        <div id="tela">
+        </div>
+        <p id="saida"> </p>
+        <input id="botao" type="submit" value="Executar" onclick="rodar()" onkeyup="rodar()">
+    </section>
+    <footer>Desenvolvido por <a href="https://github.com/PatolinoBR007" target="_blank">&copy;PatolinoBR</a></footer>
+    <script src="scrypts/index.js"></script>
+</body>
+</html>
