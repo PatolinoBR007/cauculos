@@ -15,16 +15,48 @@ header {
     margin-bottom: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.435);
 }
-section {
+main {
     position: relative;
-    
+    width: 100vw;
+    height: 500px;
+}
+section.page {
+    position: absolute;
     background-color: #23272A;
     border-radius: 15px;
     padding: 30px;
     width: 400px;
     height: 300px;
     margin: auto;
+    margin-bottom: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.767);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section#CALC {
+    border-radius: 0px 15px 15px 15px;
+    z-index: 2;
+}
+section#EQU2 {
+    z-index: 1;
+}
+input.aba {
+    position: absolute;
+    background-color: #23272A;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+    left: -60px;
+    top: 16px;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+input.aba#equ2 {
+    top: 100px;
 }
 p {
     margin-bottom: 10px;

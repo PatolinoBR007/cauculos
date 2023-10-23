@@ -10,18 +10,27 @@
     <header>
         <h1>Equação do Segundo Grau</h1>
     </header>
-    <section id="section">
-        <p id="cab">Digite os valores de 
-            <input type="number" name="valor" class="NumBt" id="valorA" placeholder="X²"> +
-            <input type="number" name="valor" class="NumBt" id="valorB" placeholder="X"> +
-            <input type="number" name="valor" class="NumBt" id="valorC"
-            placeholder="1"> = <span onclick="easter()">0</span>
-        </p>
-        <div id="tela">
-        </div>
-        <p id="saida"> </p>
-        <input id="botao" type="submit" value="Executar" onclick="rodar()" onkeyup="rodar()">
-    </section>
+    <main>
+        <section class="page" id="CALC">
+            <input class="aba" id="calc" type="button" value="CALC" onclick="sobrepor()">
+            <div>Calculadora</div>
+        </section>
+        <section class="page" id="EQU2">
+            <input class="aba" id="equ2" type="button" value="Equ. 2"
+            onclick="sobrepor()">
+            <p id="cab">Digite os valores de 
+                <input type="number" name="valor" class="NumBt" id="valorA" placeholder="X²"> +
+                <input type="number" name="valor" class="NumBt" id="valorB" placeholder="X"> +
+                <input type="number" name="valor" class="NumBt" id="valorC"
+                placeholder="1"> = <span onclick="easter()"><span id="easter">0</span>
+            </p>
+            <div id="tela">
+            </div>
+            <p id="saida"> </p>
+            <input id="botao" type="submit" value="Executar" onclick="rodar()" onkeyup="rodar()">
+        </section>
+    </main>
+    
     <footer>Desenvolvido por <a href="https://github.com/PatolinoBR007" target="_blank">&copy;PatolinoBR</a></footer>
     <script src="scrypts/index.js"></script>
 </body>

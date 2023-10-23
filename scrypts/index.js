@@ -1,5 +1,20 @@
-var tela = document.getElementById('tela')
+const calc = document.getElementById('CALC')
+const equ2 = document.getElementById('EQU2')
+const tela = document.getElementById('tela')
 tela.innerHTML = `Formula de Bhaskara: <br> Δ= b² -4.a.c <br><u> -b ±√Δ </u><br> &ensp; 2.a`
+
+let page = 1
+function sobrepor() {
+    if (page == 1) {
+        equ2.style.zIndex = '2'
+        calc.style.zIndex = '1'
+        page = 2
+    } else if (page == 2) {
+        equ2.style.zIndex = '1'
+        calc.style.zIndex = '2'
+        page = 1
+    }
+}
 
 function rodar() {
     const val = {
