@@ -40,6 +40,13 @@ function rodar() {
         // saida.innerHTML += `A: ${val.A} B: ${val.B} C: ${val.C} Delta: ${val.Del} X1: ${val.X1} X2: ${val.X2}`
     }
 }
+
+class Easter {
+    constructor() {
+        this.c = 0
+    }
+}
+
 let c = 0
 function easter() {
     c++
